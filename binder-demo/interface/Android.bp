@@ -1,0 +1,23 @@
+cc_library_shared {
+    proprietary: true,
+    name: "libbinderdemo_interface",
+
+    srcs: [
+        "IBinderDemoObserver.cpp",
+        "IBinderDemoService.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libbinder",
+        "libcutils",
+    ],
+
+    // include_dirs: [],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+    ],
+}

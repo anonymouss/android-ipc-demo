@@ -1,0 +1,21 @@
+cc_binary {
+    proprietary: true,
+    name: "binderdemo_client",
+
+    srcs: ["BinderDemoClient.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libbinder",
+    ],
+
+    include_dirs: [
+        //"../interface"
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+    ],
+}
