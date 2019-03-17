@@ -13,10 +13,6 @@ cc_binary {
         "libbinderdemo_interface",
     ],
 
-    local_include_dirs: [
-        "../interface",
-    ],
-
     // include_dirs: [],
 
     cflags: [

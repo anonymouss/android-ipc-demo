@@ -1,5 +1,5 @@
-#include "IBinderDemoObserver.h"
-#include "IBinderDemoService.h"
+#include "../interface/IBinderDemoObserver.h"
+#include "../interface/IBinderDemoService.h"
 
 #include <binder/IBinder.h>
 #include <binder/IInterface.h>
@@ -41,6 +41,8 @@ private:
     sp<IBinderDemoObserver> mObserver;
 };
 
+}  // namespace android
+
 using namespace android;
 
 int main() {
@@ -53,15 +55,13 @@ int main() {
     sm->addService(String16(kServiceName), new BinderDemoService());
 
     if (sm->checkService(String16(kServiceName)) == nullptr) {
-        ALOGE("add service %s failed", kSekServiceName);
+        ALOGE("add service %s failed", kServiceName);
         return -1;
     } else {
-        ALOGI("add service %s successfully");
+        ALOGI("add service %s successfully", kServiceName);
     }
 
     ProcessState::self()->startThreadPool();
     IPCThreadState::self()->joinThreadPool();
     return 0;
 }
-
-}  // namespace android

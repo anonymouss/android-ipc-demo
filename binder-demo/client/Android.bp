@@ -8,11 +8,10 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder",
+        "libbinderdemo_interface",
     ],
 
-    include_dirs: [
-        //"../interface"
-    ],
+    // include_dirs: [],
 
     cflags: [
         "-Werror",
