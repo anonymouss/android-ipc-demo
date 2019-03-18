@@ -20,8 +20,8 @@
     adb push vendor/bin/binderdemo_service vendor/bin/
     adb push vendor/bin/binderdemo_client vendor/bin/
 
-    adb shell chmod 777 system/bin/binderdemo_service
-    adb shell chmod 777 system/bin/binderdemo_client
+    adb shell chmod 777 vendor/bin/binderdemo_service
+    adb shell chmod 777 vendor/bin/binderdemo_client
     ```
 - 启动 `adb logcat` 抓取 log。启动 service 与 client `adb shell vendor/bin/binderdemo_service` ， `adb shell vendor/bin/binderdemo_client`
 
@@ -57,6 +57,10 @@
 ```
 
 ## How to use `binder` in native C++ codes
+
+> TODO
+
+## Expose interface to Java
 
 > TODO
 

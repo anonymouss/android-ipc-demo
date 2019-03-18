@@ -6,3 +6,7 @@
 
 - [Binder demo](./binder-demo/)
 - [HIDL demo](./hidl-demo/)
+
+**Android 整体架构**
+
+![Android Architecture](android_architecture.png)
