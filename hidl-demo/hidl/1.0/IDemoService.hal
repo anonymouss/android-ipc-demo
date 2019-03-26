@@ -1,0 +1,5 @@
+package simple.demo.hidl@1.0;
+
+interface IDemoService {
+    echo(DemoInfo info) generates(int32_t status);
+};

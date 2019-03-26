@@ -1,0 +1,6 @@
+package simple.demo.hidl@1.0;
+
+struct DemoInfo {
+    string  message;
+    uint32_t id;
+};

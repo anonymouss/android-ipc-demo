@@ -1,0 +1,15 @@
+cc_binary {
+    proprietary: true,
+    name: "simple.demo.hidl@1.0-client",
+    srcs: ["DemoClient_main.cpp"],
+    shared_libs: [
+        "liblog",
+        "libdl",
+        "libutils",
+        "libhardware",
+        "libhidlbase",
+        "libhidltransport",
+        "libhwbinder",
+        "simple.demo.hidl@1.0",
+    ],
+}

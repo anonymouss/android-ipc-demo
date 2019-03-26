@@ -2,7 +2,7 @@
 
 ## Compile & Run
 
-> 当前代码在 **Android O (8.x)** 编译验证通过
+> 当前代码在 **Android P (9.x)** 编译验证通过
 
 - 将本文件夹置于 Android 源代码任意目录，如 `$ROOT/vendor/$THIRD_PARTY/binder-demo`
 - lunch Andoird 编译配置，在 `binder-demo` 目录运行 Android 编译命令 `mm`
